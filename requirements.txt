@@ -1,0 +1,4 @@
+Eel==0.10.4
+Platypus_Opt==1.0.3
+requests==2.21.0
+platypus==1.0
