@@ -242,12 +242,15 @@ export default {
           this.waiting = true
           eel.scheduler(rendimientos, pendientes, kgs)(res => {
             this.waiting = false
-            this.result = res
-            this.showResult = true
+            if(typeof res == 'string') {
+              this.message = res
+              this.showError = true
+            } else {
+              this.result = res
+              this.showResult = true
+            }
+            
           })
-          
-
-          
         } else {
           this.e1 = 1;
         }
