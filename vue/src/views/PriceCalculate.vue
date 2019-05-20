@@ -80,10 +80,10 @@
                 >
                   <v-flex xs12 md4>
                     <v-text-field
-                      label="Altura promedio de los arboles en metros"
+                      label="Altura promedio de los árboles en metros"
                       v-model="lotes[lotes.indexOf(lote)]['heightTreeAverage']"
                       v-validate="{ required: true, regex:/^([0-9]+|[0-9]+,[0-9]{0,2}?)$/ }"
-                      data-vv-as="Altura promedio de los arboles"
+                      data-vv-as="Altura promedio de los árboles"
                       :name="'lote'+lote.num"
                       :error-messages="errors.collect('lote'+lote.num)"
                     ></v-text-field>
@@ -136,12 +136,12 @@
                 :column="$vuetify.breakpoint.mdAndDown"
                 :row="!$vuetify.breakpoint.mdAndDown"
               >
-                <v-flex xs12 md4>
+                <v-flex xs12 md6>
                   <v-text-field
-                    label="Precio promedio que las fincas vecinas pagan por un kg recolectado"
+                    label="Precio promedio que las fincas vecinas pagan por un kg de café recolectado"
                     v-model="priceAverage"
                     v-validate.initi="'numeric|required'"
-                    data-vv-as="Precio promedio que las fincas vecinas pagan por un kg recolectado"
+                    data-vv-as="Precio promedio que las fincas vecinas pagan por un kg de café recolectado"
                     name="priceAverage"
                     :error-messages="errors.collect('priceAverage')"
                     required

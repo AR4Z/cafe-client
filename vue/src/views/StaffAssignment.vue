@@ -143,7 +143,7 @@
                   </v-container>
                 </v-form>
               </v-card>
-              <v-btn color="primary" @click="e1 = 1">Atras</v-btn>
+              <v-btn color="primary" @click="e1 = 1">Atrás</v-btn>
               <v-btn color="success" v-on:click.native="calcular">Calcular</v-btn>
             </v-stepper-content>
           </v-stepper-items>

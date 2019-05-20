@@ -15,10 +15,10 @@
                 >
                   <v-flex xs12 md4>
                     <v-text-field
-                      label="Cafe maduro promedio"
+                      label="Café maduro promedio"
                       v-model="lotes[lotes.indexOf(lote)]['coffeeAverage']"
                       v-validate.initi="'numeric|required'"
-                      data-vv-as="Cafe maduro promedio"
+                      data-vv-as="Café maduro promedio"
                       :name="'lote'+lote.num"
                       :error-messages="errors.collect('lote'+lote.num)"
                       required
@@ -66,10 +66,10 @@
               >
                 <v-flex xs12 md4>
                   <v-text-field
-                      label="% Disminución de horas laborales de acuerdo al clima"
+                      label="% de disminución de horas laborales de acuerdo al clima"
                       v-model="weatherAverageLoss"
                       v-validate.initi="'numeric|required'"
-                      data-vv-as="% Disminución de horas laborales de acuerdo al clima"
+                      data-vv-as="% de disminución de horas laborales de acuerdo al clima"
                       name="weatherAverageLoss"
                       :error-messages="errors.collect('weatherAverageLoss')"
                       required
